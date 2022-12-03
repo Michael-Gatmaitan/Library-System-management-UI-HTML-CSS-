@@ -1,0 +1,32 @@
+@import '../mixins.scss';
+
+.btn {
+  border-radius: 8px;
+  @include fontProp('Poppins', 500, 14px);
+  background-color: $primary !important;
+  outline: none;
+  border: none;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.btn-solid {
+  padding: 12px 16px;
+  background-color: $primary !important;
+
+  @include desktop {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+}
+
+.btn-bordered {
+  border: solid 5px $primary !important;
+  padding: 7px 11px;
+  background-color: transparent !important;
+
+  @include desktop {
+    padding: 11px 15px;
+    font-size: 16px;
+ }
+}

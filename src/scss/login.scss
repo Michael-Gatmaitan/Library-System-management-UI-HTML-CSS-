@@ -1,0 +1,58 @@
+@import './mixins.scss';
+@import './components/buttons.scss';
+@import './components/textboxes.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+
+  .web-title {
+    @include flexCenter;
+    height: 100%;
+    width: 100%;
+    @include fontProp('Libre Baskerville', 700, 32px);
+    margin-top: 120px;
+  }
+
+  .login-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $secondary;
+    padding: 12px 24px;
+    border-radius: 24px 24px 0 0;
+
+    .title {
+      @include fontProp('Libre Baskerville', 700, 32px, #fff);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 76px;
+
+      .buttons {
+        #create-account {
+          color: #fff !important;
+          margin-left: 12px;
+
+          &:hover {
+            background-color: $primary !important;
+            color: #121212 !important;
+          }
+        }
+      }
+    }
+  }
+}

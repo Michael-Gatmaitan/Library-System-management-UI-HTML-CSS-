@@ -1,0 +1,39 @@
+.btn {
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212 !important;
+  background-color: #FBD926 !important;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.btn-solid {
+  padding: 12px 16px;
+  background-color: #FBD926 !important;
+}
+
+@media (min-width: 780px) {
+  .btn-solid {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+}
+
+.btn-bordered {
+  border: solid 5px #FBD926 !important;
+  padding: 7px 11px;
+  background-color: transparent !important;
+}
+
+@media (min-width: 780px) {
+  .btn-bordered {
+    padding: 11px 15px;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=buttons.css.map */

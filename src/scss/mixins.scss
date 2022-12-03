@@ -1,0 +1,30 @@
+$primary: #FBD926;
+$secondary: #1B0F00;
+$red: #F32F2F;
+$green: #13B323;
+$white-bg: #f2f2f2;
+
+@mixin fontProp($family, $weight, $size, $color: #121212) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color !important;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+@mixin desktop {
+  @media (min-width: 780px) {
+    @content;
+  }
+}
+
+@mixin customMediaQuery($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}

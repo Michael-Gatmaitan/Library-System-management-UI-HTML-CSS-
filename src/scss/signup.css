@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+}
+
+.container .header-container {
+  height: 100px;
+  width: 100%;
+  background-color: #00f;
+}
+
+.container .signup-form {
+  width: 100%;
+  height: 100px;
+  background-color: #1B0F00;
+}
+/*# sourceMappingURL=signup.css.map */

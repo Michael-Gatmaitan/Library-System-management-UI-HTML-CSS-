@@ -1,0 +1,27 @@
+@import '../mixins.scss';
+
+.input-box {
+  border-radius: 10px;
+  @include fontProp('Poppins', 400, 16px, #fff);
+  background-color: rgba(#fff, .1);
+  border: solid 2px rgba(#fff, .2);
+  padding: 12px;
+  width: 100%;
+  transition: 0.1s ease-in;
+  outline: none;
+
+  &::placeholder {
+    @include fontProp('Poppins', 400, 16px, rgba(#fff, .6));
+    color: rgba(#fff, .6);
+  }
+
+  &:focus, &:active {
+    background-color: rgba(#fff, .15);
+    border: solid 2px rgba(#fff, .2);
+  }
+
+  @include desktop {
+    font-size: 18px !important;
+    &::placeholder { font-size: 18px !important; }
+  }
+}

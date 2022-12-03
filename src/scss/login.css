@@ -1,0 +1,177 @@
+.btn {
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212 !important;
+  background-color: #FBD926 !important;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.btn-solid {
+  padding: 12px 16px;
+  background-color: #FBD926 !important;
+}
+
+@media (min-width: 780px) {
+  .btn-solid {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+}
+
+.btn-bordered {
+  border: solid 5px #FBD926 !important;
+  padding: 7px 11px;
+  background-color: transparent !important;
+}
+
+@media (min-width: 780px) {
+  .btn-bordered {
+    padding: 11px 15px;
+    font-size: 16px;
+  }
+}
+
+.input-box {
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  width: 100%;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  outline: none;
+}
+
+.input-box::-webkit-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:focus, .input-box:active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 780px) {
+  .input-box {
+    font-size: 18px !important;
+  }
+  .input-box::-webkit-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box:-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::placeholder {
+    font-size: 18px !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .web-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #121212 !important;
+  margin-top: 120px;
+}
+
+.container .login-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1B0F00;
+  padding: 12px 24px;
+  border-radius: 24px 24px 0 0;
+}
+
+.container .login-form .title {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff !important;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container .login-form form {
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 76px;
+}
+
+.container .login-form form .buttons #create-account {
+  color: #fff !important;
+  margin-left: 12px;
+}
+
+.container .login-form form .buttons #create-account:hover {
+  background-color: #FBD926 !important;
+  color: #121212 !important;
+}
+/*# sourceMappingURL=login.css.map */

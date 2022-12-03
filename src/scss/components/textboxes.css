@@ -1,0 +1,70 @@
+.input-box {
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  width: 100%;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  outline: none;
+}
+
+.input-box::-webkit-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:focus, .input-box:active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 780px) {
+  .input-box {
+    font-size: 18px !important;
+  }
+  .input-box::-webkit-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box:-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::placeholder {
+    font-size: 18px !important;
+  }
+}
+/*# sourceMappingURL=textboxes.css.map */
