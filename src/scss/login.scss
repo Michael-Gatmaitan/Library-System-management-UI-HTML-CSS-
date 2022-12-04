@@ -13,13 +13,14 @@ body {
 
 .container {
   display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: auto auto;
 
   .web-title {
     @include flexCenter;
-    height: 100%;
-    width: 100%;
     @include fontProp('Libre Baskerville', 700, 32px);
-    margin-top: 120px;
+    text-align: center;
   }
 
   .login-form {
@@ -43,6 +44,7 @@ body {
       margin-bottom: 76px;
 
       .buttons {
+        a { text-decoration: none; }
         #create-account {
           color: #fff !important;
           margin-left: 12px;

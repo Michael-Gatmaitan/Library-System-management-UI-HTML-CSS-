@@ -21,66 +21,6 @@ body::-webkit-scrollbar {
   padding: 0 24px;
 }
 
-.body-container .body .body-content {
-  width: 100%;
-}
-
-.body-container .body .body-content .image-slider {
-  width: 100%;
-  height: 160px;
-  position: relative;
-}
-
-.body-container .body .body-content .image-slider .slide-example {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background-color: #1B0F00;
-}
-
-.body-container .body .body-content .image-slider .pages {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 6px;
-}
-
-.body-container .body .body-content .image-slider .pages .page {
-  width: 8px;
-  height: 8px;
-  gap: 6px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.body-container .body .body-content .image-slider .pages .active-page {
-  background-color: #fff;
-}
-
-.body-container .body .body-content .read .header {
-  margin: 38px 0 8px 0;
-  font-family: "Libre Baskerville";
-  font-size: 32px;
-  font-weight: 700;
-  color: #121212 !important;
-}
-
-.body-container .body .body-content .read .description {
-  font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(18, 18, 18, 0.8) !important;
-}
-
-.body-container .body .body-content .read .btn {
-  margin-top: 14px;
-}
-
 .body-container .body .footer {
   display: -ms-grid;
   display: grid;
@@ -145,8 +85,8 @@ body::-webkit-scrollbar {
   .body-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto 300px;
-        grid-template-columns: auto auto 300px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
   }
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=defaults.css.map */

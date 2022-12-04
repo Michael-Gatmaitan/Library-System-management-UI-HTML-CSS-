@@ -1,0 +1,159 @@
+.sidebar {
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  background-color: #1B0F00;
+  z-index: 1100;
+  padding: 0 24px;
+}
+
+.sidebar .desktop_hide-sidebar {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: -21px;
+  top: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar .sidebar-nav {
+  width: 100%;
+  height: 84px;
+  margin-bottom: 40px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar .sidebar-nav .close-sidebar {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.sidebar .sidebar-buttons {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.sidebar .sidebar-buttons .active-button-container {
+  position: relative;
+}
+
+.sidebar .sidebar-buttons .active-button-container ::before {
+  content: '';
+  width: calc(100% + (24px * 2));
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+}
+
+.sidebar .sidebar-buttons .active-button-container ::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  left: -24px;
+  top: 0;
+}
+
+.sidebar .sidebar-buttons .button-container {
+  width: 100%;
+  padding: 18px 0;
+}
+
+.sidebar .sidebar-buttons .button-container .button-content {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebar-buttons .button-container .button-content img {
+  display: block;
+  width: 24px;
+}
+
+.sidebar .sidebar-buttons .button-container .button-content .label {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.sidebar .sidebar-buttons .button-container .button-content:hover .label {
+  color: #FBD926 !important;
+}
+
+.sidebar .sidebar-buttons .button-container .sign-out {
+  margin-top: 100px;
+}
+
+.sidebar .sidebar-buttons .button-container .sign-out .label {
+  color: #F32F2F !important;
+}
+
+@media (min-width: 780px) {
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    left: 0;
+    padding: 0 38px;
+  }
+  .sidebar .sidebar-nav .close-sidebar {
+    display: none;
+  }
+  .sidebar .sidebar-search-bar {
+    display: none;
+  }
+  .sidebar .sidebar-buttons .active-button-container ::before {
+    width: calc(100% + (38px * 2));
+    left: -38px;
+  }
+  .sidebar .sidebar-buttons .active-button-container ::after {
+    left: -38px;
+  }
+  .sidebar .button-container .button-content {
+    gap: 12px;
+  }
+  .sidebar .button-container .button-content .label {
+    font-size: 18px !important;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

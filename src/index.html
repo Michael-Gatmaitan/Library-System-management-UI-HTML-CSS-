@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./scss/components/sidebar.css">
+  <link rel="stylesheet" href="./scss/components/profile.css">
+  <link rel="stylesheet" href="./scss/components/buttons.css">
+  <link rel="stylesheet" href="./scss/components/textboxes.css">
+
+  <!-- Body content but also UNIVERSAL -->
+  <link rel="stylesheet" href="./scss/components/navigation-bar.css">
+  <link rel="stylesheet" href="./scss/components/defaults.css">
+  
+  <!-- Public css files -->
+  <link rel="stylesheet" href="./scss/home.css">
+  <title>Home</title>
+</head>
+<body>
+
+  <div class="body-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- <div class="desktop_hide-sidebar" onclick="toggleSidebarDesktop()">
+        <img src="./svg/arrow_left_black.svg" alt="hide-sidebar" srcset="">
+      </div> -->
+
+      <div class="sidebar-nav">
+        <div class="close-sidebar" onclick="toggleSidebar()">
+          <img src="./svg/arrow_left_white.svg" alt="hide_sidebar">
+        </div>
+
+        <div class="sidebar-logo">
+          <img src="svg/about.svg" alt="logo">
+        </div>
+      </div>
+
+      <!-- Sidebar Body -->
+
+      <div class="search-bar-book sidebar-search-bar">
+        <img src="./svg/search.svg" alt="" srcset="">
+        <input type="text" name="search_book" class="search-bar" placeholder="Search book...">
+      </div>
+
+      <div class="sidebar-buttons">
+          <div class="button-container active-button-container">
+            <div class="button-content">
+              <img src="./svg/home.svg">
+              <div class="label">Home</div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="button-content">
+              <img src="./svg/book_shelves.svg">
+              <div class="label">Bookshelves</div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="button-content">
+              <img src="./svg/borrowed_book.svg">
+              <div class="label">Borrowed Book</div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="button-content">
+              <img src="./svg/donate_book.svg">
+              <div class="label">Donate Book</div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="button-content">
+              <img src="./svg/about.svg">
+              <div class="label">About</div>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <div class="button-content sign-out">
+              <img src="./svg/sign_out.svg">
+              <div class="label">Sign Out</div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="body">
+
+      <div class="navigation-bar">
+
+        <!-- Mobile NAVIGATION -->
+        <div class="nav-content-mobile">
+          <div class="burger-menu" onclick="toggleSidebar()">
+            <img src="./svg/burger_menu.svg" alt="burger-menu">
+          </div>
+
+          <div class="web-title">Home</div>
+
+          <div class="profile-btn" onclick="toggleProfile()">
+            <img src="./svg/profile.svg" alt="profile">
+          </div>
+        </div>
+
+        <!-- Desktop NAVIGATION -->
+        <div class="nav-content-desktop">
+          <div class="title">Home</div>
+
+          <div class="seachbar">
+
+          </div>
+
+          <div class="settings">
+            <img src="./svg/settings_black.svg" alt="setting">
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the only section can change the site's content -->
+      <!-- Content -->
+      <div class="body-content">
+        
+        <!-- Content Start -->
+        <div class="image-slider">
+          <div class="slide-example">
+
+          </div>
+
+          <div class="bullets">
+            <div class="bullet active-bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+          </div>
+        </div>
+        
+        <div class="read">
+          <div class="header">Archive</div>
+          <div class="description">
+            Archive provides management of library by performing web-based functionalities including creating, reading, updating, & deleting data.<br/><br/>
+            
+            This system supports different types of works by storing data related in library, for example: borrowing books and checking available books via online without going inside library.</div>
+          <button class="btn btn-solid">More Information</button>
+        </div>
+
+        <div class="read">
+          <div class="header">Donate Books</div>
+          <div class="description">Our mission is only not to help you, we also want you to help someone who in needs of books. Donate a book by simply requesting to us and we will wait you in library for your donation.</div>
+          <button class="btn btn-solid">Make Donation Request</button>
+        </div>
+
+        <div class="read">
+          <div class="header">Bookshelves</div>
+          <div class="description">Check all of available books to borrow using our customized visualization made with Javascript and know where they are exactly place at the same time.</div>
+          <button class="btn btn-solid">Borrow Request</button>
+          <button class="btn btn-bordered">Check Bookshelves</button>
+        </div>
+          
+      </div>
+
+      <div class="footer">
+        <div class="group-5">
+          <div class="header">Group 5</div>
+    
+          <div class="members">
+            <div class="member">Michael Jay Ivan Z. Gatmaitan</div>
+            <div class="member">Kimberly Tupaz</div>
+            <div class="member">Tristan Gamilo</div>
+            <div class="member">Ivan Rey Derammas</div>
+            <div class="member">Lance De Guzman</div>
+          </div>
+        </div>
+    
+        <form class="email">
+          <div class="header">Email Us</div>
+    
+          <input type="text" class="input-box" id="subject" placeholder="Subject (Optional)">
+          <textarea type="text" class="input-box" id="compose" placeholder="Compose"></textarea>
+    
+          <input type="button" class="btn btn-solid" value="Send">
+        </form>
+    
+      </div>
+  
+      <!-- Content Ends -->
+    </div>
+
+    <!-- Profile -->
+    <div class="profile">
+      <div class="profile-nav">
+        <div class="close-profile" onclick="toggleProfile()">
+          <img src="./svg/arrow_left_black.svg" alt="close-profile">
+        </div>
+
+        <div class="title">Profile</div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-info-container">
+          <div class="profile-image">
+            <img src="./img/user/profile.png" alt="profile">
+          </div>
+          <div class="profile-name">Michael Gatmaitan</div>
+        </div>
+
+        <div class="profile-keys">
+          <div class="section">BSIT-11B</div>
+          <div class="lrn">#104908070124</div>
+        </div>
+      </div>
+
+      <div class="borrowed-book-container">
+        <div class="header">
+          <div class="title">Borrowed Book</div>
+          <div class="see-more">
+            <img src="./svg/arrow_right_black.svg" alt="more">
+          </div>
+        </div>
+
+        <div class="borrowed-book-info">
+          <div class="book-info">
+            <div class="book-image">
+              <img src="./img/books/book1.jpg" alt="book1">
+            </div>
+
+            <div class="book-name">Data Structures & Algorithms in Java 2nd Edition</div>
+          </div>
+
+          <div class="book-due">
+            <div class="info">
+              <div class="label">Borrowed</div>
+              <div class="date">Nov. 3, 2022</div>
+            </div>
+
+            <div class="info">
+              <div class="label">Return</div>
+              <div class="date">Nov. 13, 2022</div>
+            </div>
+
+          </div>
+          
+          <div class="book-status overdue">2 days overdue</div>
+
+          <div class="thread"></div>
+        </div>
+
+        <div class="borrowed-book-info">
+          <div class="book-info">
+            <div class="book-image">
+              <img src="./img/books/book2.jpg" alt="book2">
+            </div>
+
+            <div class="book-name">Object Oriented Programming in Java</div>
+          </div>
+
+          <div class="book-due">
+            <div class="info">
+              <div class="label">Borrowed</div>
+              <div class="date">Nov. 2, 2022</div>
+            </div>
+
+            <div class="info">
+              <div class="label">Return</div>
+              <div class="date">Nov. 15, 2022</div>
+            </div>
+
+          </div>
+          
+          <div class="book-status underdue">2 days left before due</div>
+
+          <div class="thread"></div>
+        </div>
+
+      </div>
+
+      <div class="borrow-history-container">
+
+        <div class="title">Borrow History</div>
+
+        <div class="borrow-history-card">
+          <div class="book-info">
+            <div class="book-name">Fundamentals of Programming</div>
+            <div class="date">Oct. 4, 2022</div>
+          </div>
+
+          <div class="returned">Returned</div>
+
+          <div class="thread"></div>
+        </div>
+
+        <div class="borrow-history-card">
+          <div class="book-info">
+            <div class="book-name">Understanding the Self</div>
+            <div class="date">Oct. 10, 2022</div>
+          </div>
+
+          <div class="returned">Returned</div>
+
+          <div class="thread"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="./js/controls.js"></script>
+  
+</body>
+</html>

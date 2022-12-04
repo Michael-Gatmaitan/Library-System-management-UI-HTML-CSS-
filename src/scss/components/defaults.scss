@@ -1,0 +1,85 @@
+@import '../mixins.scss';
+
+body {
+  padding: 0;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+* { box-sizing: border-box; }
+
+.body-container {
+
+  img { display: block; }
+
+  .body {
+    width: 100%;
+    padding: 0 24px;
+
+    // Body content
+    
+
+    .footer {
+      display: grid;
+      width: calc(100% + (24px * 2));
+      margin-left: -24px;
+      margin-top: 69px;
+      padding: 32px 24px 100px 24px;
+      background-color: $secondary;
+      gap: 48px;
+
+      @include desktop {
+        grid-template-columns: auto auto;
+        width: calc(100% + (38px * 2));
+        margin-left: -38px;
+      }
+    
+      .group-5 {
+        .header {
+          @include fontProp('Libre Baskerville', 700, 32px, #fff);
+          margin-bottom: 8px;
+        }
+    
+        .members {
+          display: grid;
+          gap: 8px;
+    
+          .member {
+            @include fontProp('Poppins', 400, 16px, #fff);
+          }
+        }
+      }
+    
+      .email {
+        .header {
+          @include fontProp('Libre Baskerville', 700, 28px, #fff);
+          margin-bottom: 12px;
+        }
+    
+        #compose {
+          margin: 8px 0 12px 0;
+          word-break: break-word;
+        }
+        
+      }
+    }
+
+    // Body, desktop mode
+    @include desktop {
+      padding: 0 38px;
+    }
+  }
+
+}
+
+
+// Body container DESKTOP MODE
+.body-container {
+  @include desktop {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}

@@ -1,3 +1,112 @@
+.input-box {
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  width: 100%;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  outline: none;
+}
+
+.input-box::-webkit-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::-ms-input-placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box::placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box:focus, .input-box:active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: solid 2px white;
+}
+
+@media (min-width: 780px) {
+  .input-box {
+    font-size: 18px !important;
+  }
+  .input-box::-webkit-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box:-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::-ms-input-placeholder {
+    font-size: 18px !important;
+  }
+  .input-box::placeholder {
+    font-size: 18px !important;
+  }
+}
+
+.btn {
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212 !important;
+  background-color: #FBD926 !important;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.btn-solid {
+  padding: 12px 16px;
+  background-color: #FBD926 !important;
+}
+
+@media (min-width: 780px) {
+  .btn-solid {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+}
+
+.btn-bordered {
+  border: solid 5px #FBD926 !important;
+  padding: 7px 11px;
+  background-color: transparent !important;
+}
+
+@media (min-width: 780px) {
+  .btn-bordered {
+    padding: 11px 15px;
+    font-size: 16px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,23 +118,77 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr auto;
-      grid-template-rows: 1fr auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 .container .header-container {
-  height: 100px;
   width: 100%;
-  background-color: #00f;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.container .header-container .header {
+  text-align: center;
+}
+
+.container .header-container .header .title {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #121212 !important;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.container .header-container .header .quote {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  color: #121212 !important;
 }
 
 .container .signup-form {
+  padding: 24px;
   width: 100%;
-  height: 100px;
   background-color: #1B0F00;
+  border-radius: 24px 24px 0 0;
+}
+
+.container .signup-form .title {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff !important;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.container .signup-form form {
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+}
+
+.container .signup-form form .buttons a {
+  text-decoration: none;
+}
+
+.container .signup-form form .buttons #login {
+  margin-left: 12px;
+  color: #fff !important;
 }
 /*# sourceMappingURL=signup.css.map */

@@ -17,11 +17,55 @@
 
   &:focus, &:active {
     background-color: rgba(#fff, .15);
-    border: solid 2px rgba(#fff, .2);
+    border: solid 2px rgba(#fff, 1);
   }
 
   @include desktop {
     font-size: 18px !important;
     &::placeholder { font-size: 18px !important; }
+  }
+}
+
+.search-bar-book {
+  position: relative;
+
+  .search-bar {
+    background-color: $white-bg;
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 12px 12px calc(12px + 24px + 12px);
+    @include fontProp('Poppins', 400, 16px);
+    border: none;
+    outline: none;
+  }
+
+  img {
+    display: block;
+    height: 22px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 12px;
+  }
+
+  &::placeholder {
+    @include fontProp('Poppins', 400, 16px, rgba(#121212, .6));
+  }
+
+  @include desktop {
+
+    .search-bar {
+      padding: 16px 16px 16px calc(16px + 28px + 12px);
+      font-size: 18px !important;
+    }
+
+    img {
+      height: 26px;
+      left: 16px;
+    }
+
+    &::placeholder {
+      font-size: 18px !important;
+    }
   }
 }

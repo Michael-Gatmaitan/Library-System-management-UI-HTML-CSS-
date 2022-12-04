@@ -1,0 +1,52 @@
+.navigation-bar {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 18px 0;
+}
+
+.navigation-bar .nav-content-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar .nav-content-mobile .burger-menu {
+  width: 42px;
+}
+
+.navigation-bar .nav-content-mobile .burger-menu, .navigation-bar .nav-content-mobile .profile {
+  cursor: pointer;
+}
+
+.navigation-bar .nav-content-mobile .web-title {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 700;
+  color: #121212 !important;
+}
+
+.navigation-bar .nav-content-desktop {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .navigation-bar .nav-content-mobile {
+    display: none;
+  }
+  .navigation-bar .nav-content-desktop {
+    display: block;
+  }
+}
+/*# sourceMappingURL=navigation-bar.css.map */

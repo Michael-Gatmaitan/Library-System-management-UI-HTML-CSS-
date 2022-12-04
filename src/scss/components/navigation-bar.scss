@@ -1,0 +1,44 @@
+@import '../mixins.scss';
+
+.navigation-bar {
+  width: 100%;
+  position: sticky;
+  padding: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 18px 0;
+
+  .nav-content-mobile {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+
+    .burger-menu {
+      width: 42px;
+    }
+
+    .burger-menu, .profile {
+      cursor: pointer;
+    }
+
+    .web-title {
+      @include fontProp('Libre Baskerville', 700, 24px);
+    }
+  }
+
+  .nav-content-desktop {
+    display: none;
+  }
+
+  @include desktop {
+    .nav-content-mobile {
+      display: none;
+    }
+
+    .nav-content-desktop {
+      display: block;
+    }
+  }
+}
