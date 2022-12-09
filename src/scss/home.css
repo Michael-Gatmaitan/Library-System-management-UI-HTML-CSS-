@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
-  padding: 24px;
+  padding: 14px;
 }
 
 .body-content .image-slider .darken-filter .header {
@@ -30,7 +30,7 @@
 .body-content .image-slider .darken-filter .des {
   margin-top: 12px;
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #fff !important;
   width: 90%;
