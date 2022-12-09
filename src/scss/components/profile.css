@@ -39,7 +39,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profile .profile-nav .title {
@@ -202,6 +204,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 8px;
 }
 
 .profile .borrow-history-container .borrow-history-card .book-info .book-name, .profile .borrow-history-container .borrow-history-card .book-info .date {
@@ -226,6 +229,59 @@ img {
   margin-top: 8px;
 }
 
+.profile .overdue-container {
+  margin-top: 44px;
+}
+
+.profile .overdue-container .title {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  color: #121212 !important;
+}
+
+.profile .overdue-container .overdue-card {
+  margin-top: 12px;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+}
+
+.profile .overdue-container .overdue-card .info {
+  padding-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .overdue-container .overdue-card .info .book-name, .profile .overdue-container .overdue-card .info .due-date {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212 !important;
+}
+
+.profile .overdue-container .overdue-card .info .due-date {
+  color: #F32F2F !important;
+}
+
+.profile .overdue-container .overdue-card .due-mount {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #F32F2F !important;
+}
+
+.profile .overdue-container .overdue-card .thread {
+  width: 100%;
+  height: 3px;
+  background-color: #e7e7e7;
+  margin-top: 12px;
+}
+
 @media (min-width: 780px) {
   .profile {
     position: -webkit-sticky;
@@ -235,6 +291,7 @@ img {
     height: 100vh;
     right: 0;
     padding: 0 38px;
+    max-width: 350px;
   }
   .profile .profile-nav {
     display: none;

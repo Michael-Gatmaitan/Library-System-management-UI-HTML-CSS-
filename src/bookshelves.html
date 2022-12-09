@@ -25,12 +25,12 @@
   <!-- Body content but also UNIVERSAL -->
   <link rel="stylesheet" href="./scss/components/navigation-bar.css">
   <link rel="stylesheet" href="./scss/components/defaults.css">
-  
+
   <!-- Public css files -->
-  <link rel="stylesheet" href="./scss/home.css">
+  <link rel="stylesheet" href="./scss/bookshelves.css">
   <!-- Scripts for REUSABLE COMPONENTS -->
   <script src="./js/reusableComponents.js"></script>
-  <title>Home</title>
+  <title>Bookshelves</title>
 </head>
 <body>
 
@@ -65,19 +65,19 @@
       </div>
 
       <div class="sidebar-buttons">
-          <div class="button-container active-button-container">
-            <div class="button-content">
-              <img src="./svg/home.svg">
-              <div class="label">Home</div>
-            </div>
-          </div>
           <div class="button-container">
-            <a href="./bookshelves.html">
+            <a href="./index.html">
               <div class="button-content">
-                <img src="./svg/book_shelves.svg">
-                <div class="label">Bookshelves</div>
+                <img src="./svg/home.svg">
+                <div class="label">Home</div>
               </div>
             </a>
+          </div>
+          <div class="button-container active-button-container">
+            <div class="button-content">
+              <img src="./svg/book_shelves.svg">
+              <div class="label">Bookshelves</div>
+            </div>
           </div>
           <div class="button-container">
             <div class="button-content">
@@ -112,54 +112,81 @@
 
       <div class="scroll-indicator"></div>
 
-      <navigation-bar-component id="navigation-bar-component" title="Home"></navigation-bar-component>
+      <navigation-bar-component id="navigation-bar-component" title="Bookshelves"></navigation-bar-component>
 
       <!-- This is the only section can change the site's content -->
       <!-- Content -->
+
       <div class="body-content">
-        
-        <!-- Content Start -->
-        <div class="image-slider">
-          <div class="darken-filter">
 
-            <div class="header">
-              Introducing, Archive-lib.
-            </div>
+        <div class="shelf-header">
+          <div class="header">Select shelf</div>
 
-            <div class="des">
-              A reusable Library Management System for the school of Pambayang Dalubhasaan ng Marilao (PDM) built using MERN Stack.
-            </div>
-          </div>
-          <div class="slide-container">
-            <!-- <div class="image-container">
-              <img src="./img/library-images/1.jpeg">
-            </div> -->
+          <div class="shelf-buttons-container">
+            <div onclick="displayTopics('shelf1')" class="shelf-button btn btn-solid">Shelf 1</div>
+            <div onclick="displayTopics('shelf2')" class="shelf-button btn btn-solid">Shelf 2</div>
+            <div onclick="displayTopics('shelf3')" class="shelf-button btn btn-solid">Shelf 3</div>
           </div>
         </div>
-        
-        <div class="read">
-          <div class="header">Archive</div>
-          <div class="description">
-            Archive provides management of library by performing web-based functionalities including creating, reading, updating, & deleting data.<br/><br/>
+
+        <div class="shelf">
+          <div class="header shelf-header-indicator">Select shelf</div>
+
+          <div class="shelf-info">
+            <div class="shelf-topics">
+              <div class="shelf-topics-header">Book Topics</div>
+
+              <div class="topics-container">
+                <!-- <div class="topics active-topic">Computer Science</div>
+                <div class="topics">Cisco</div>
+                <div class="topics">Hotel and Restaurant Management</div>
+                <div class="topics">Data Structures & Algorithms</div>
+                <div class="topics">Microsoft Applications</div> -->
+                <div class="topic-empty">Select shelf.</div>
+              </div>
+            </div>
             
-            This system supports different types of works by storing data related in library, for example: borrowing books and checking available books via online without going inside library.</div>
-          <button class="btn btn-solid">More Information</button>
+            <div class="topic-books">
+              <div class="shelf-books-header">Books</div>
+              <div class="shelf-books-label">Select a book</div>
+
+              <div class="books-container">
+                <!-- <div class="books">Basics of C++</div>
+                <div class="books">Basics of C++ Vol. 2</div>
+                <div class="books active-book">Data Structures and Algorithms in Java 2nd Edition</div>
+                <div class="books">Object Oriented Programming in Javascript</div>
+                <div class="books">Automating Boring Stuffs in Python</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="book-info">Book Info</div>
+
+          <div class="book-info-container">
+            <div class="book-image">
+              <img src="./img/books/book1.jpg" alt="book1">
+            </div>
+
+            <div class="book-body">
+              <div class="book-title">Data Structures & Algorithms in Java 2nd Edition</div>
+              <div class="book-topic-label">Topic: Computer Science</div>
+
+              <div class="book-buttons-desktop">
+                <button class="borrow btn btn-solid btn-disabled">Borrow</button>
+                <button class="reserve btn btn-solid">Reserve</button>  
+              </div>
+            </div>
+
+          </div>
+
+          <div class="book-buttons">
+            <button class="borrow btn btn-solid btn-disabled">Borrow</button>
+            <button class="reserve btn btn-solid">Reserve</button>
+          </div>
         </div>
 
-        <div class="read">
-          <div class="header">Bookshelves</div>
-          <div class="description">Check all of available books to borrow using our customized visualization made with Javascript and know where they are exactly place at the same time.</div>
-          <button class="btn btn-solid">Borrow Request</button>
-          <button class="btn btn-bordered">Check Bookshelves</button>
-        </div>
-
-        <div class="read">
-          <div class="header">Donate Books</div>
-          <div class="description">Our mission is only not to help you, we also want you to help someone who in needs of books. Donate a book by simply requesting to us and we will wait you in library for your donation.</div>
-          <button class="btn btn-solid">Make Donation Request</button>
-        </div>
-          
       </div>
+
 
       <footer-component></footer-component>
   
@@ -171,8 +198,9 @@
 
 
   </div>
-  
-  <script src="./js/index.js"></script>
+
+  <script src="./js/bookshelves.js"></script>
+
   <script src="./js/controls.js"></script>
   
 </body>

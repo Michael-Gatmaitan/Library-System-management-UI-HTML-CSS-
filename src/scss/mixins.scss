@@ -14,7 +14,7 @@ $white-bg: #f2f2f2;
 @mixin flexCenter {
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
 }
 
 @mixin desktop {

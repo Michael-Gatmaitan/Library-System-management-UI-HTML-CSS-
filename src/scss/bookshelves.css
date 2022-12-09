@@ -1,0 +1,250 @@
+.body-content .shelf-header {
+  margin-top: 48px;
+}
+
+.body-content .shelf-header .header {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #121212 !important;
+  margin-bottom: 12px;
+}
+
+.body-content .shelf-header .shelf-buttons-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  max-width: 740px;
+  gap: 12px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin-bottom: 48px;
+}
+
+.body-content .shelf-header .shelf-buttons-container .active-shelf-button {
+  background-color: #1B0F00 !important;
+  color: #fff !important;
+}
+
+.body-content .shelf .header {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #121212 !important;
+  margin-bottom: 12px;
+}
+
+.body-content .shelf .shelf-info {
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+}
+
+.body-content .shelf .shelf-info .shelf-topics, .body-content .shelf .shelf-info .topic-books {
+  padding: 12px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .shelf-topics-header {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: #121212 !important;
+  margin-bottom: 8px;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container .topics {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #121212 !important;
+  cursor: pointer;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container .active-topic {
+  position: relative;
+  font-weight: 600 !important;
+  padding: 4px;
+  background-color: #1B0F00;
+  border-radius: 8px;
+  color: #fff !important;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container .active-topic::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #FBD926;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container .topic-empty {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(19, 179, 35, 0.6) !important;
+}
+
+.body-content .shelf .shelf-info .shelf-topics .topics-container .no-topic {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(18, 18, 18, 0.6) !important;
+}
+
+@media (min-width: 780px) {
+  .body-content .shelf .shelf-info .shelf-topics .shelf-topics-header {
+    font-size: 24px !important;
+  }
+  .body-content .shelf .shelf-info .shelf-topics .topics-container .topics {
+    font-size: 18px !important;
+  }
+}
+
+.body-content .shelf .shelf-info .topic-books .shelf-books-header {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: #121212 !important;
+}
+
+.body-content .shelf .shelf-info .topic-books .shelf-books-label {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212 !important;
+  margin-bottom: 12px;
+  opacity: .6;
+}
+
+.body-content .shelf .shelf-info .topic-books .books-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+}
+
+.body-content .shelf .shelf-info .topic-books .books-container .books {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #121212 !important;
+  cursor: pointer;
+}
+
+.body-content .shelf .shelf-info .topic-books .books-container .active-book {
+  position: relative;
+  font-weight: 600 !important;
+}
+
+.body-content .shelf .shelf-info .topic-books .books-container .active-book::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #FBD926;
+}
+
+.body-content .shelf .shelf-info .topic-books .books-container .no-books {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(18, 18, 18, 0.6) !important;
+}
+
+@media (min-width: 780px) {
+  .body-content .shelf .shelf-info {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .body-content .shelf .shelf-info .shelf-books-header {
+    font-size: 24px !important;
+  }
+  .body-content .shelf .shelf-info .book-container .book {
+    font-size: 18px !important;
+  }
+}
+
+.body-content .shelf .book-info {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: #121212 !important;
+  margin: 12px 0;
+}
+
+@media (min-width: 780px) {
+  .body-content .shelf .book-info {
+    font-size: 24px !important;
+  }
+}
+
+.body-content .shelf .book-info-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  -ms-grid-columns: 120px auto;
+      grid-template-columns: 120px auto;
+}
+
+.body-content .shelf .book-info-container .book-image img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.body-content .shelf .book-info-container .book-body .book-title {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 700;
+  color: #121212 !important;
+}
+
+.body-content .shelf .book-info-container .book-body .book-topic-label {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(18, 18, 18, 0.6) !important;
+  margin-bottom: 12px;
+}
+
+.body-content .shelf .book-info-container .book-body .book-buttons-desktop {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .body-content .shelf .book-info-container {
+    gap: 12px;
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto;
+  }
+  .body-content .shelf .book-info-container .book-body .book-buttons-desktop {
+    display: block;
+  }
+}
+
+.body-content .shelf .book-buttons {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+@media (min-width: 780px) {
+  .body-content .shelf .book-buttons {
+    display: none;
+  }
+}
+/*# sourceMappingURL=bookshelves.css.map */

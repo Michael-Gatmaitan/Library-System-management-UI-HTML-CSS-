@@ -21,3 +21,12 @@ const toggleProfile = () => {
   profile.style.right = isProfileHidden ? 0 : "-100vw";
   isProfileHidden = !isProfileHidden;
 }
+
+const scrollIndicator = document.getElementsByClassName("scroll-indicator")[0];
+
+document.body.onscroll = () => {
+  let { innerHeight, pageYOffset } = window;
+  let { scrollHeight } = document.body;
+  
+  scrollIndicator.style.width = `${(pageYOffset / (scrollHeight - innerHeight)) * 100}%`;
+}

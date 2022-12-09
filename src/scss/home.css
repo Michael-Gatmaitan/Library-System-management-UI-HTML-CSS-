@@ -1,152 +1,94 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.body-container img {
-  display: block;
-}
-
-.body-container .body {
-  width: 100%;
-  padding: 0 24px;
-}
-
-.body-container .body .body-content {
+.body-content {
   width: 100%;
 }
 
-.body-container .body .body-content .image-slider {
+.body-content .image-slider {
   width: 100%;
-  height: 160px;
   position: relative;
+  overflow: hidden;
+  background-color: #1B0F00;
+  border-radius: 12px;
 }
 
-.body-container .body .body-content .image-slider .slide-example {
+.body-content .image-slider .darken-filter {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  background-color: #1B0F00;
-}
-
-.body-container .body .body-content .image-slider .pages {
   position: absolute;
-  bottom: 12px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 6px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  padding: 24px;
 }
 
-.body-container .body .body-content .image-slider .pages .page {
-  width: 8px;
-  height: 8px;
-  gap: 6px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+.body-content .image-slider .darken-filter .header {
+  font-family: "Libre Baskerville";
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff !important;
 }
 
-.body-container .body .body-content .image-slider .pages .active-page {
-  background-color: #fff;
+.body-content .image-slider .darken-filter .des {
+  margin-top: 12px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff !important;
+  width: 90%;
 }
 
-.body-container .body .body-content .read .header {
-  margin: 38px 0 8px 0;
+@media (min-width: 780px) {
+  .body-content .image-slider .darken-filter {
+    padding: 18px;
+  }
+  .body-content .image-slider .darken-filter .header {
+    font-size: 69px !important;
+  }
+  .body-content .image-slider .darken-filter .des {
+    font-size: 24px !important;
+  }
+}
+
+.body-content .image-slider .slide-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.body-content .image-slider .slide-container .image-container {
+  width: 100%;
+}
+
+.body-content .image-slider .slide-container .image-container img {
+  width: 100%;
+}
+
+.body-content .read .header {
+  margin: 58px 0 8px 0;
   font-family: "Libre Baskerville";
   font-size: 32px;
   font-weight: 700;
   color: #121212 !important;
 }
 
-.body-container .body .body-content .read .description {
+.body-content .read .description {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   color: rgba(18, 18, 18, 0.8) !important;
 }
 
-.body-container .body .body-content .read .btn {
+.body-content .read .btn {
   margin-top: 14px;
 }
 
-.body-container .body .footer {
-  display: -ms-grid;
-  display: grid;
-  width: calc(100% + (24px * 2));
-  margin-left: -24px;
-  margin-top: 69px;
-  padding: 32px 24px 100px 24px;
-  background-color: #1B0F00;
-  gap: 48px;
-}
-
 @media (min-width: 780px) {
-  .body-container .body .footer {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    width: calc(100% + (38px * 2));
-    margin-left: -38px;
+  .body-content .read .header {
+    font-size: 48px !important;
   }
-}
-
-.body-container .body .footer .group-5 .header {
-  font-family: "Libre Baskerville";
-  font-size: 32px;
-  font-weight: 700;
-  color: #fff !important;
-  margin-bottom: 8px;
-}
-
-.body-container .body .footer .group-5 .members {
-  display: -ms-grid;
-  display: grid;
-  gap: 8px;
-}
-
-.body-container .body .footer .group-5 .members .member {
-  font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff !important;
-}
-
-.body-container .body .footer .email .header {
-  font-family: "Libre Baskerville";
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff !important;
-  margin-bottom: 12px;
-}
-
-.body-container .body .footer .email #compose {
-  margin: 8px 0 12px 0;
-  word-break: break-word;
-}
-
-@media (min-width: 780px) {
-  .body-container .body {
-    padding: 0 38px;
-  }
-}
-
-@media (min-width: 780px) {
-  .body-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto 300px;
-        grid-template-columns: auto auto 300px;
+  .body-content .read .description {
+    font-size: 18px !important;
   }
 }
 /*# sourceMappingURL=home.css.map */

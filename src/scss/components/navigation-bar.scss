@@ -30,6 +30,26 @@
 
   .nav-content-desktop {
     display: none;
+
+    // Default styles
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+
+    .title {
+      @include fontProp('Libre Baskerville', 700, 32px);
+    }
+
+    .settings {
+      height: 58px;
+      width: 58px;
+      background-color: $white-bg;
+      border-radius: 10px;
+      cursor: pointer;
+      @include flexCenter;
+
+      img { height: 24px; }
+    }
   }
 
   @include desktop {
@@ -38,7 +58,7 @@
     }
 
     .nav-content-desktop {
-      display: block;
+      display: grid;
     }
   }
 }

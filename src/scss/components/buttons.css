@@ -24,6 +24,11 @@
   }
 }
 
+.btn-solid:hover {
+  background-color: #b89b03 !important;
+  color: #fff !important;
+}
+
 .btn-bordered {
   border: solid 5px #FBD926 !important;
   padding: 7px 11px;
@@ -35,5 +40,10 @@
     padding: 11px 15px;
     font-size: 16px;
   }
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=buttons.css.map */

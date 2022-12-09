@@ -41,6 +41,32 @@
       transform: translateY(-50%);
       @include flexCenter;
     }
+
+    .sidebar-logo {
+      height: 45px;
+      display: flex;
+      // gap: 12px;
+      align-items: center;
+
+      .archive-logo {
+        height: 100%;
+        img { height: 100%; }
+      }
+
+      .logo-text {
+        display: none;
+        @include fontProp('Libre Baskerville', 700, 32px, #fff);
+      }
+
+      @include desktop {
+        gap: 14px;
+
+        .logo-text {
+          display: block;
+        }
+      }
+      
+    }
   }
 
   .sidebar-buttons {
@@ -90,7 +116,7 @@
         }
 
         .label {
-          @include fontProp('Poppins', 500, 16px, #fff);
+          @include fontProp('Poppins', 500, 14px, #fff);
         }
 
         &:hover {
@@ -99,13 +125,11 @@
       }
 
       .sign-out {
-        margin-top: 100px;
+        margin-top: 50px;
         .label { color: $red !important; }
       }
     }
   }
-
-
 
   @include desktop {
     position: sticky;
@@ -124,6 +148,10 @@
     .sidebar-search-bar { display: none; }
 
     .sidebar-buttons {
+      .button-container {
+        a { text-decoration: none !important; }
+      }
+
       .active-button-container {
         ::before {
           width: calc(100% + (38px * 2));
@@ -140,7 +168,7 @@
       .button-content {
         gap: 12px;
 
-        .label { font-size: 18px !important; }
+        .label { font-size: 16px !important; }
       }
     }
   }

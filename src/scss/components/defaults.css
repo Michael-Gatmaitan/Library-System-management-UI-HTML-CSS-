@@ -12,6 +12,16 @@ body::-webkit-scrollbar {
           box-sizing: border-box;
 }
 
+.h1 {
+  font-size: 32px !important;
+}
+
+@media (min-width: 780px) {
+  .h1 {
+    font-size: 48px !important;
+  }
+}
+
 .body-container img {
   display: block;
 }
@@ -19,6 +29,15 @@ body::-webkit-scrollbar {
 .body-container .body {
   width: 100%;
   padding: 0 24px;
+}
+
+.body-container .body .scroll-indicator {
+  height: 5px;
+  position: fixed;
+  background-color: #FBD926;
+  top: 0;
+  left: 0;
+  z-index: 1500;
 }
 
 .body-container .body .footer {
@@ -32,16 +51,7 @@ body::-webkit-scrollbar {
   gap: 48px;
 }
 
-@media (min-width: 780px) {
-  .body-container .body .footer {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    width: calc(100% + (38px * 2));
-    margin-left: -38px;
-  }
-}
-
-.body-container .body .footer .group-5 .header {
+.body-container .body .footer .group-6 .header {
   font-family: "Libre Baskerville";
   font-size: 32px;
   font-weight: 700;
@@ -49,13 +59,13 @@ body::-webkit-scrollbar {
   margin-bottom: 8px;
 }
 
-.body-container .body .footer .group-5 .members {
+.body-container .body .footer .group-6 .members {
   display: -ms-grid;
   display: grid;
   gap: 8px;
 }
 
-.body-container .body .footer .group-5 .members .member {
+.body-container .body .footer .group-6 .members .member {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
@@ -79,14 +89,31 @@ body::-webkit-scrollbar {
   .body-container .body {
     padding: 0 38px;
   }
+  .body-container .body .footer {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    width: calc(100% + (38px * 2));
+    padding: 42px 38px 100px 38px;
+    margin-left: -38px;
+  }
+  .body-container .body .footer .group-5 .header {
+    font-size: 48px !important;
+    margin-bottom: 12px;
+  }
+  .body-container .body .footer .group-5 .members .member {
+    font-size: 16px !important;
+  }
+  .body-container .body .footer .email .header {
+    font-size: 32px !important;
+  }
 }
 
 @media (min-width: 780px) {
   .body-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    -ms-grid-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
   }
 }
 /*# sourceMappingURL=defaults.css.map */

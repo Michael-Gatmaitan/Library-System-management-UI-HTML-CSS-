@@ -1,21 +1,48 @@
 {
   "shelf1": {
     "topics": {
-      "computer science": [
-
-      ],
-      "cisco": [
-
-      ],
-      "hotel and restaurant management": [
-
-      ],
-      "data structures & algorithms": [
-
-      ],
-      "microsoft applications": [
-
-      ]
+      "computer science": {
+        "books": [
+          {
+            "title": "Basics of C++",
+            "imageSrc": ""
+          },
+          {
+            "title": "Basics of C++ Vol. 2",
+            "imageSrc": ""
+          },
+          {
+            "title": "Data Structures & Algorithms in Java 2nd Edition",
+            "imageSrc": "./img/books/book1.jpg"
+          },
+          {
+            "title": "Object Oriented Programming in Javascript",
+            "imageSrc": "./img/books/book2.jpg"
+          },
+          {
+            "title": "Automating Boring Stuffs in Python",
+            "imageSrc": ""
+          }
+        ]
+      },
+      "cisco": {
+        "books": []
+      },
+      "hotel and restaurant management": {
+        "books": []
+      },
+      "data structures & algorithms": {
+        "books": []
+      },
+      "microsoft applications": {
+        "books": []
+      }
     }
+  },
+  "shelf2": {
+
+  },
+  "shelf3": {
+
   }
 }

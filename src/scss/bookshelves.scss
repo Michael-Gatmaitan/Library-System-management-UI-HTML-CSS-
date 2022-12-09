@@ -1,0 +1,216 @@
+@import './mixins.scss';
+
+.body-content {
+  
+  .shelf-header {
+    margin-top: 48px;
+
+    .header {
+      @include fontProp('Libre Baskerville', 700, 32px);
+      margin-bottom: 12px;
+    }
+
+    .shelf-buttons-container {
+      display: grid;
+      width: 100%;
+      max-width: 740px;
+      gap: 12px;
+      grid-template-columns: auto auto auto;
+      margin-bottom: 48px;
+
+      .active-shelf-button {
+        background-color: $secondary !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .shelf {
+    .header {
+      @include fontProp('Libre Baskerville', 700, 32px);
+      margin-bottom: 12px;
+    }
+
+    .shelf-info {
+      display: grid;
+      gap: 12px;
+
+      .shelf-topics, .topic-books {
+        padding: 12px;
+        background-color: $white-bg;
+        border-radius: 10px;
+      }
+
+      .shelf-topics {
+
+        .shelf-topics-header {
+          @include fontProp('Poppins', 600, 20px);
+          margin-bottom: 8px;
+        }
+
+        .topics-container {
+          display: grid;
+          gap: 8px;
+
+          .topics {
+            @include fontProp('Poppins', 400, 16px);
+            cursor: pointer;
+          }
+
+          .active-topic {
+            position: relative;
+            font-weight: 600 !important;
+            padding: 4px;
+            background-color: $secondary;
+            border-radius: 8px;
+            color: #fff !important;
+          }
+  
+          .active-topic::before {
+            content: '';
+            position: absolute;
+            width: 20%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $primary;
+          }
+
+          .topic-empty {
+            @include fontProp('Poppins', 500, 14px, rgba($green, .6));
+          }
+
+          .no-topic {
+            @include fontProp('Poppins', 500, 14px, rgba(#121212, .6));
+          }
+        }
+
+        @include desktop {
+          .shelf-topics-header {
+            font-size: 24px !important;
+          }
+
+          .topics-container {
+            .topics {
+              font-size: 18px !important;
+            }
+          }
+        }
+      }
+
+      .topic-books {
+        .shelf-books-header {
+          @include fontProp('Poppins', 600, 20px);
+        }
+        .shelf-books-label {
+          @include fontProp('Poppins', 500, 14px);
+          margin-bottom: 12px;
+          opacity: .6;
+        }
+
+        .books-container {
+          display: grid;
+          gap: 8px;
+
+          .books {
+            @include fontProp('Poppins', 400, 16px);
+            cursor: pointer;
+          }
+
+          .active-book {
+            position: relative;
+            font-weight: 600 !important;
+          }
+  
+          .active-book::before {
+            content: '';
+            position: absolute;
+            width: 20%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $primary;
+          }
+
+          .no-books {
+            @include fontProp('Poppins', 500, 14px, rgba(#121212, .6));
+          }
+        }
+      }
+
+      @include desktop {
+        grid-template-columns: 1fr 1fr;
+        .shelf-books-header {
+          font-size: 24px !important;
+        }
+
+        .book-container {
+          .book {
+            font-size: 18px !important;
+          }
+        }
+      }
+
+    }
+
+    .book-info {
+      @include fontProp('Poppins', 600, 20px);
+      margin: 12px 0;
+
+      @include desktop { font-size: 24px !important;}
+    }
+
+    .book-info-container {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 120px auto;
+
+      .book-image {
+        img {
+          border-radius: 10px;
+          width: 100%;
+        }
+      }
+
+      .book-body {
+        .book-title {
+          @include fontProp("Libre Baskerville", 700, 20px);
+        }
+        .book-topic-label {
+          @include fontProp("Poppins", 500, 14px, rgba(#121212, .6));
+          margin-bottom: 12px;
+        }
+
+        .book-buttons-desktop {
+          display: none;
+        }
+      }
+
+      @include desktop {
+        gap: 12px;
+        grid-template-columns: 200px auto;
+
+        .book-body {
+          
+          .book-buttons-desktop {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .book-buttons {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 8px;
+      margin-top: 8px;
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+  }
+
+}
