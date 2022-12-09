@@ -22,7 +22,7 @@
 
 .body-content .image-slider .darken-filter .header {
   font-family: "Libre Baskerville";
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 700;
   color: #fff !important;
 }
@@ -41,7 +41,7 @@
     padding: 18px;
   }
   .body-content .image-slider .darken-filter .header {
-    font-size: 69px !important;
+    font-size: 48px !important;
   }
   .body-content .image-slider .darken-filter .des {
     font-size: 24px !important;

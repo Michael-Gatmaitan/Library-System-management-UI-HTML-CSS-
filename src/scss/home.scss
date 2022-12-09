@@ -22,7 +22,7 @@
       padding: 24px;
 
       .header {
-        @include fontProp('Libre Baskerville', 700, 48px, #fff);
+        @include fontProp('Libre Baskerville', 700, 24px, #fff);
       }
       .des {
         margin-top: 12px;
@@ -34,7 +34,7 @@
         padding: 18px;
 
         .header {
-          font-size: 69px !important;
+          font-size: 48px !important;
         }
         .des {
           font-size: 24px !important;
