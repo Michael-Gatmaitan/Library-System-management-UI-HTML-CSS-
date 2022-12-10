@@ -27,10 +27,10 @@
   <link rel="stylesheet" href="./scss/components/defaults.css">
   
   <!-- Public css files -->
-  <link rel="stylesheet" href="./scss/home.css">
+  <link rel="stylesheet" href="./scss/about.css">
   <!-- Scripts for REUSABLE COMPONENTS -->
   <script src="./js/reusableComponents.js"></script>
-  <title>Home</title>
+  <title>About</title>
 </head>
 <body>
 
@@ -65,11 +65,13 @@
       </div>
 
       <div class="sidebar-buttons">
-          <div class="button-container active-button-container">
-            <div class="button-content">
-              <img src="./svg/home.svg">
-              <div class="label">Home</div>
-            </div>
+          <div class="button-container">
+            <a href="./bookshelves.html">
+              <div class="button-content">
+                <img src="./svg/home.svg">
+                <div class="label">Home</div>
+              </div>
+            </a>
           </div>
           <div class="button-container">
             <a href="./bookshelves.html">
@@ -91,13 +93,11 @@
               <div class="label">Donate Book</div>
             </div>
           </div>
-          <div class="button-container">
-            <a href="./about.html">
-              <div class="button-content">
-                <img src="./svg/about.svg">
-                <div class="label">About</div>
-              </div>
-            </a>
+          <div class="button-container active-button-container">
+            <div class="button-content">
+              <img src="./svg/about.svg">
+              <div class="label">About</div>
+            </div>
           </div>
 
           <div class="button-container">
@@ -114,52 +114,15 @@
 
       <div class="scroll-indicator"></div>
 
-      <navigation-bar-component id="navigation-bar-component" title="Home"></navigation-bar-component>
+      <navigation-bar-component id="navigation-bar-component" title="About"></navigation-bar-component>
 
       <!-- This is the only section can change the site's content -->
       <!-- Content -->
       <div class="body-content">
         
         <!-- Content Start -->
-        <div class="image-slider">
-          <div class="darken-filter">
-
-            <div class="header">
-              Introducing, <br />Archive-lib.
-            </div>
-
-            <div class="des">
-              A reusable Library Management System for the school of Pambayang Dalubhasaan ng Marilao (PDM) built using MERN Stack.
-            </div>
-          </div>
-          <div class="slide-container">
-            <!-- <div class="image-container">
-              <img src="./img/library-images/1.jpeg">
-            </div> -->
-          </div>
-        </div>
-        
-        <div class="read">
-          <div class="header">Archive</div>
-          <div class="description">
-            Archive provides management of library by performing web-based functionalities including creating, reading, updating, & deleting data.<br/><br/>
-            
-            This system supports different types of works by storing data related in library, for example: borrowing books and checking available books via online without going inside library.</div>
-          <button class="btn btn-solid">More Information</button>
-        </div>
-
-        <div class="read">
-          <div class="header">Bookshelves</div>
-          <div class="description">Check all of available books to borrow using our customized visualization made with Javascript and know where they are exactly place at the same time.</div>
-          <button class="btn btn-solid">Borrow Request</button>
-          <button class="btn btn-bordered">Check Bookshelves</button>
-        </div>
-
-        <div class="read">
-          <div class="header">Donate Books</div>
-          <div class="description">Our mission is only not to help you, we also want you to help someone who in needs of books. Donate a book by simply requesting to us and we will wait you in library for your donation.</div>
-          <button class="btn btn-solid">Make Donation Request</button>
-        </div>
+        .about-header
+        <div class="about-header">What is Archive-lib?</div>
           
       </div>
 
@@ -173,7 +136,7 @@
 
 
   </div>
-  
+
   <script src="./js/index.js"></script>
   <script src="./js/controls.js"></script>
   

@@ -170,7 +170,7 @@ class FooterComponent extends HTMLElement {
           <div class="member">Kimberly Tupaz</div>
           <div class="member">Angela Ebio</div>
           <div class="member">Tristan Gamilo</div>
-          <div class="member">Ivan Rey Derammas</div>
+          <div class="member">Ivan Rey Derramas</div>
           <div class="member">Lance De Guzman</div>
         </div>
       </div>
@@ -178,7 +178,7 @@ class FooterComponent extends HTMLElement {
       <form class="email">
         <div class="header">Email Us</div>
   
-        <input type="text" class="input-box" id="subject" placeholder="Subject (Optional)">
+        <input type="text" class="input-box" id="subject" placeholder="Your Email">
         <textarea type="text" class="input-box" id="compose" placeholder="Compose"></textarea>
   
         <input type="button" class="btn btn-solid" value="Send">

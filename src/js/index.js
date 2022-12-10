@@ -9,7 +9,7 @@ images.map(e => {
     <div class="image-container">
       <img src="./img/library-images/${e}.jpeg">
     </div>
-  `
+  ` 
 });
 
 let marginLeft = 0;
